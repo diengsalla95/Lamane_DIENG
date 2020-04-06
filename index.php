@@ -150,7 +150,7 @@ session_start();
 			?>
 			<label style="background-color: red;margin-left: 60px"> Veillez renseigner les champs vides svp!</label>
 			<?php	
-			}elseif (isset($_POST['valider']) && $j<2){
+			}elseif (isset($_POST['valider']) && count($_POST['fr'])<2){
 			?>
 			<label style="background-color: red;margin-left: 60px"> Veillez choisir au moins deux langues svp!</label>
 			<?php
