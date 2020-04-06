@@ -90,10 +90,10 @@ session_start();
 
 			<strong style="color:white">Langues</strong><br>
 
-			<input class=" chec" type="checkbox" name="fr[]" id="case1" value="F"><label for="case1" > Francais</label>
-			<input class=" chec" type="checkbox" name="fr[]" id="case2" value="A"><label for="case2"> Anglais</label>
-			<input class=" chec" type="checkbox" name="fr[]" id="case3" value="E"><label for="case3"> Espagnol</label>
-			<input class=" chec" type="checkbox" name="fr[]" id="case4" value="P"><label for="case4"> Portugais</label><br><br>
+			<input class=" chec" type="checkbox" name="langue[]" id="case1" value="F"><label for="case1" > Francais</label>
+			<input class=" chec" type="checkbox" name="langue[]" id="case2" value="A"><label for="case2"> Anglais</label>
+			<input class=" chec" type="checkbox" name="langue[]" id="case3" value="E"><label for="case3"> Espagnol</label>
+			<input class=" chec" type="checkbox" name="langue[]" id="case4" value="P"><label for="case4"> Portugais</label><br><br>
 
 			<textarea name="commentaire" rows="5" cols="48" required> Votre commentaire</textarea><br><br>
 
@@ -104,16 +104,16 @@ session_start();
 		<br>
 		<?php
 			
-			if (isset($_POST['valider']) && $k==5 && count($_POST['fr'])>=2) {
+			if (isset($_POST['valider']) && $k==5 && count($_POST['langue'])>=2) {
 				$_SESSION['Nom'][]=$_POST['Nom'];
 				$_SESSION['Prenom'][]=$_POST['Prenom'];
 				$_SESSION['Adresse'][]=$_POST['Adresse'];
 				$_SESSION['Numero'][]=$_POST['Numero'];
 				$_SESSION['Genre'][]=$_POST['Genre'];
 				$_SESSION['Satisfait'][]=$_POST['Satisfait'];
-				$langue=implode(",", $_POST['fr']);
-				$_SESSION['fr'][]=$langue;
-				$_SESSION['tab']=[$_SESSION['Nom'],$_SESSION['Prenom'],$_SESSION['Adresse'],$_SESSION['Numero'],$_SESSION['Genre'],$_SESSION['Satisfait'],$_SESSION['fr']];
+				$langue=implode(",", $_POST['langue']);
+				$_SESSION['langue'][]=$langue;
+				$_SESSION['tab']=[$_SESSION['Nom'],$_SESSION['Prenom'],$_SESSION['Adresse'],$_SESSION['Numero'],$_SESSION['Genre'],$_SESSION['Satisfait'],$_SESSION['langue']];
 
 				?>
 				<table>
@@ -150,7 +150,7 @@ session_start();
 			?>
 			<label style="background-color: red;margin-left: 60px"> Veillez renseigner les champs vides svp!</label>
 			<?php	
-			}elseif (isset($_POST['valider']) && count($_POST['fr'])<2){
+			}elseif (isset($_POST['valider']) && count($_POST['langue'])<2){
 			?>
 			<label style="background-color: red;margin-left: 60px"> Veillez choisir au moins deux langues svp!</label>
 			<?php
