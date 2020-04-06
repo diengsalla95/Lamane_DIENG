@@ -9,7 +9,7 @@ session_start();
 </head>
 <body>
 	<?php
-	$k=0;$j=0;
+	$k=0;
 	include('fonction.php');
 	?>
 	<div class="contener">
