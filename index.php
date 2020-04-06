@@ -22,7 +22,7 @@ session_start();
 			?>
 			<p><input type="text" name="Nom" placeholder="Nom" required value="<?php echo $_POST['Nom'];?>"><br></p>
 			<?php
-				  }else{
+				}else{
 			?>
 			<p><input type="text" name="Nom" placeholder="Nom" required><br></p>
 			<?php
@@ -35,7 +35,7 @@ session_start();
 			?>
 			<p><input type="text" name="Prenom" placeholder="Prenom" required value="<?php echo $_POST['Prenom'];?>"><br></p>
 			<?php
-				  }else{
+				}else{
 			?>
 			<p><input type="text" name="Prenom" placeholder="Prenom" required ><br></p>
 			<?php
@@ -47,7 +47,7 @@ session_start();
 			?>
 			<p><input type="text" name="Adresse" placeholder="Adresse" required value="<?php echo $_POST['Adresse'];?>"><br></p>
 			<?php
-				  }else{
+				}else{
 			?>
 			<p><input type="text" name="Adresse" placeholder="Adresse" required ><br></p>
 			<?php
@@ -59,7 +59,7 @@ session_start();
 			?>
 			<p><input type="text" name="Numero" placeholder="Numero" required value="<?php echo $_POST['Numero'];?>"><br></p>
 			<?php
-				  }else{
+				}else{
 			?>
 			<p><input type="text" name="Numero" placeholder="Numero" required ><br></p>
 			<?php
@@ -71,7 +71,7 @@ session_start();
 			?>
 			<p><input type="text" name="CNumero" placeholder="Confirmation Numero" required value="<?php echo $_POST['CNumero'];?>"><br></p>
 			<?php
-				  }else{
+				}else{
 			?>
 			<p><input type="text" name="CNumero" placeholder="Confirmation Numero" required ><br></p>
 			<?php
@@ -141,7 +141,6 @@ session_start();
 					<?php
 					}
 					?>
-				
 			</table>
 			<p>Pour remplir un autre formulaire, veuillez cliquer<a href="index.php"> ici</a></p>
 				<?php
