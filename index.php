@@ -151,12 +151,12 @@ session_start();
 					?>
 						<td style="background-color: salmon;text-align:left;"> <?php echo$_SESSION['tab'][$j][$i]?></td>
 					<?php
-					}
+						}
 					}
 					?>
 					</tr>
 					<?php
-					}
+				}
 					?>
 				
 			</table>
