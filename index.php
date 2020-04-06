@@ -92,7 +92,7 @@ session_start();
 
 			<input class=" chec" type="checkbox" name="fr[]" id="case1" value="F"><label for="case1" > Francais</label>
 			<input class=" chec" type="checkbox" name="fr[]" id="case2" value="A"><label for="case2"> Anglais</label>
-			<input class=" chec" type="checkbox" name="fr[]" id="case3" value="S"><label for="case3"> Espagnol</label>
+			<input class=" chec" type="checkbox" name="fr[]" id="case3" value="E"><label for="case3"> Espagnol</label>
 			<input class=" chec" type="checkbox" name="fr[]" id="case4" value="P"><label for="case4"> Portugais</label><br><br>
 
 			<textarea name="commentaire" rows="5" cols="48" required> Votre commentaire</textarea><br><br>
