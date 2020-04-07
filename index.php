@@ -109,7 +109,7 @@ session_start();
 			
 
 			<input class="val" type="submit" name="valider" value="Valider">
-			<input class="ann" type="reset" name="valider" value="Annuler">
+			<input class="ann" type="reset" value="Reinitialiser">
 			</fieldset>
 		</form>
 		<br>
